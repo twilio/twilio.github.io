@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Twilio::REST
+  
+    &mdash; Documentation by YARD 0.9.9
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Twilio::REST";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (R)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Twilio.html" title="Twilio (module)">Twilio</a></span></span>
+     &raquo; 
+    <span class="title">REST</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: Twilio::REST
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/twilio-ruby/rest/api.rb<span class="defines">,<br />
+  lib/twilio-ruby/rest/chat.rb,<br /> lib/twilio-ruby/rest/video.rb,<br /> lib/twilio-ruby/rest/client.rb,<br /> lib/twilio-ruby/rest/chat/v1.rb,<br /> lib/twilio-ruby/rest/chat/v2.rb,<br /> lib/twilio-ruby/rest/lookups.rb,<br /> lib/twilio-ruby/rest/monitor.rb,<br /> lib/twilio-ruby/rest/pricing.rb,<br /> lib/twilio-ruby/rest/accounts.rb,<br /> lib/twilio-ruby/rest/trunking.rb,<br /> lib/twilio-ruby/rest/video/v1.rb,<br /> lib/twilio-ruby/framework/page.rb,<br /> lib/twilio-ruby/rest/api/v2010.rb,<br /> lib/twilio-ruby/framework/error.rb,<br /> lib/twilio-ruby/rest/lookups/v1.rb,<br /> lib/twilio-ruby/rest/monitor/v1.rb,<br /> lib/twilio-ruby/rest/pricing/v1.rb,<br /> lib/twilio-ruby/rest/taskrouter.rb,<br /> lib/twilio-ruby/framework/domain.rb,<br /> lib/twilio-ruby/framework/helper.rb,<br /> lib/twilio-ruby/rest/accounts/v1.rb,<br /> lib/twilio-ruby/rest/trunking/v1.rb,<br /> lib/twilio-ruby/framework/version.rb,<br /> lib/twilio-ruby/rest/ip_messaging.rb,<br /> lib/twilio-ruby/framework/resource.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1.rb,<br /> lib/twilio-ruby/rest/video/v1/room.rb,<br /> lib/twilio-ruby/rest/chat/v1/service.rb,<br /> lib/twilio-ruby/rest/chat/v2/service.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v1.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v2.rb,<br /> lib/twilio-ruby/rest/monitor/v1/alert.rb,<br /> lib/twilio-ruby/rest/monitor/v1/event.rb,<br /> lib/twilio-ruby/rest/pricing/v1/voice.rb,<br /> lib/twilio-ruby/rest/api/v2010/account.rb,<br /> lib/twilio-ruby/rest/trunking/v1/trunk.rb,<br /> lib/twilio-ruby/rest/chat/v1/credential.rb,<br /> lib/twilio-ruby/rest/chat/v2/credential.rb,<br /> lib/twilio-ruby/rest/video/v1/recording.rb,<br /> lib/twilio-ruby/rest/chat/v1/service/role.rb,<br /> lib/twilio-ruby/rest/chat/v1/service/user.rb,<br /> lib/twilio-ruby/rest/chat/v2/service/role.rb,<br /> lib/twilio-ruby/rest/chat/v2/service/user.rb,<br /> lib/twilio-ruby/rest/pricing/v1/messaging.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/key.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip.rb,<br /> lib/twilio-ruby/rest/accounts/v1/credential.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/call.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/queue.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/token.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage.rb,<br /> lib/twilio-ruby/rest/chat/v1/service/channel.rb,<br /> lib/twilio-ruby/rest/chat/v2/service/channel.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v1/service.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v2/service.rb,<br /> lib/twilio-ruby/rest/lookups/v1/phone_number.rb,<br /> lib/twilio-ruby/rest/pricing/v1/phone_number.rb,<br /> lib/twilio-ruby/rest/pricing/v1/voice/number.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace.rb,<br /> lib/twilio-ruby/rest/video/v1/room/recording.rb,<br /> lib/twilio-ruby/rest/pricing/v1/voice/country.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/address.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/message.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/new_key.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v1/credential.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v2/credential.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/recording.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/conference.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/short_code.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/domain.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v1/service/role.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v1/service/user.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v2/service/role.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v2/service/user.rb,<br /> lib/twilio-ruby/rest/pricing/v1/messaging/country.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/task.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/application.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/connect_app.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/signing_key.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/event.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/notification.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/queue/member.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record.rb,<br /> lib/twilio-ruby/rest/chat/v1/service/channel/invite.rb,<br /> lib/twilio-ruby/rest/chat/v1/service/channel/member.rb,<br /> lib/twilio-ruby/rest/chat/v2/service/channel/invite.rb,<br /> lib/twilio-ruby/rest/chat/v2/service/channel/member.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/worker.rb,<br /> lib/twilio-ruby/rest/trunking/v1/trunk/phone_number.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/call/feedback.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/message/media.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/transcription.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/trigger.rb,<br /> lib/twilio-ruby/rest/chat/v1/service/channel/message.rb,<br /> lib/twilio-ruby/rest/chat/v2/service/channel/message.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v1/service/channel.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v2/service/channel.rb,<br /> lib/twilio-ruby/rest/pricing/v1/phone_number/country.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/call/recording.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/activity.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/workflow.rb,<br /> lib/twilio-ruby/rest/accounts/v1/credential/public_key.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/new_signing_key.rb,<br /> lib/twilio-ruby/rest/chat/v1/service/user/user_channel.rb,<br /> lib/twilio-ruby/rest/chat/v2/service/user/user_channel.rb,<br /> lib/twilio-ruby/rest/trunking/v1/trunk/credential_list.rb,<br /> lib/twilio-ruby/rest/trunking/v1/trunk/origination_url.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/message/feedback.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/task_queue.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/call/notification.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/outgoing_caller_id.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/daily.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/today.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/validation_request.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/task_channel.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/credential_list.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/yearly.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/monthly.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v1/service/channel/invite.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v1/service/channel/member.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v2/service/channel/invite.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v2/service/channel/member.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/call/feedback_summary.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/all_time.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v1/service/channel/message.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v2/service/channel/message.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/authorized_connect_app.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/available_phone_number.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/conference/participant.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/yesterday.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/task/reservation.rb,<br /> lib/twilio-ruby/rest/trunking/v1/trunk/ip_access_control_list.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/recording/add_on_result.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/recording/transcription.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/last_month.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/this_month.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v1/service/user/user_channel.rb,<br /> lib/twilio-ruby/rest/ip_messaging/v2/service/user/user_channel.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/worker/reservation.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/ip_access_control_list.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/workspace_statistics.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number/local.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/worker/worker_channel.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/available_phone_number/local.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number/mobile.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/available_phone_number/mobile.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/address/dependent_phone_number.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/credential_list/credential.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/worker/worker_statistics.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number/toll_free.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/recording/add_on_result/payload.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/worker/workers_statistics.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/available_phone_number/toll_free.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/domain/credential_list_mapping.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/workflow/workflow_statistics.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/ip_access_control_list/ip_address.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/task_queue/task_queue_statistics.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/task_queue/task_queues_statistics.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/domain/ip_access_control_list_mapping.rb</span>
+</dd>
+  </dl>
+  
+</div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="REST/Accounts.html" title="Twilio::REST::Accounts (class)">Accounts</a></span>, <span class='object_link'><a href="REST/Api.html" title="Twilio::REST::Api (class)">Api</a></span>, <span class='object_link'><a href="REST/Chat.html" title="Twilio::REST::Chat (class)">Chat</a></span>, <span class='object_link'><a href="REST/Client.html" title="Twilio::REST::Client (class)">Client</a></span>, <span class='object_link'><a href="REST/Domain.html" title="Twilio::REST::Domain (class)">Domain</a></span>, <span class='object_link'><a href="REST/InstanceContext.html" title="Twilio::REST::InstanceContext (class)">InstanceContext</a></span>, <span class='object_link'><a href="REST/InstanceResource.html" title="Twilio::REST::InstanceResource (class)">InstanceResource</a></span>, <span class='object_link'><a href="REST/IpMessaging.html" title="Twilio::REST::IpMessaging (class)">IpMessaging</a></span>, <span class='object_link'><a href="REST/ListResource.html" title="Twilio::REST::ListResource (class)">ListResource</a></span>, <span class='object_link'><a href="REST/Lookups.html" title="Twilio::REST::Lookups (class)">Lookups</a></span>, <span class='object_link'><a href="REST/Monitor.html" title="Twilio::REST::Monitor (class)">Monitor</a></span>, <span class='object_link'><a href="REST/Page.html" title="Twilio::REST::Page (class)">Page</a></span>, <span class='object_link'><a href="REST/Pricing.html" title="Twilio::REST::Pricing (class)">Pricing</a></span>, <span class='object_link'><a href="REST/RestError.html" title="Twilio::REST::RestError (class)">RestError</a></span>, <span class='object_link'><a href="REST/Taskrouter.html" title="Twilio::REST::Taskrouter (class)">Taskrouter</a></span>, <span class='object_link'><a href="REST/Trunking.html" title="Twilio::REST::Trunking (class)">Trunking</a></span>, <span class='object_link'><a href="REST/TwilioError.html" title="Twilio::REST::TwilioError (class)">TwilioError</a></span>, <span class='object_link'><a href="REST/Version.html" title="Twilio::REST::Version (class)">Version</a></span>, <span class='object_link'><a href="REST/Video.html" title="Twilio::REST::Video (class)">Video</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#url_join-instance_method" title="#url_join (instance method)">#<strong>url_join</strong>(left, right)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="url_join-instance_method">
+  
+    #<strong>url_join</strong>(left, right)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+3
+4
+5
+6
+7</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/framework/helper.rb', line 3</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_url_join'>url_join</span><span class='lparen'>(</span><span class='id identifier rubyid_left'>left</span><span class='comma'>,</span> <span class='id identifier rubyid_right'>right</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_left'>left</span> <span class='op'>=</span> <span class='id identifier rubyid_left'>left</span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\/+$</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^\/+</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_right'>right</span> <span class='op'>=</span> <span class='id identifier rubyid_right'>right</span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\/+$</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_sub'>sub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^\/+</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_left'>left</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_right'>right</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Thu Jul 13 13:04:59 2017 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.9 (ruby-2.4.1).
+</div>
+
+    </div>
+  </body>
+</html>
