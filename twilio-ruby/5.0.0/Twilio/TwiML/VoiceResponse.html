@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Twilio::TwiML::VoiceResponse
+  
+    &mdash; Documentation by YARD 0.9.9
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Twilio::TwiML::VoiceResponse";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (V)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Twilio.html" title="Twilio (module)">Twilio</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../TwiML.html" title="Twilio::TwiML (module)">TwiML</a></span></span>
+     &raquo; 
+    <span class="title">VoiceResponse</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: Twilio::TwiML::VoiceResponse
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="TwiML.html" title="Twilio::TwiML::TwiML (class)">TwiML</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="TwiML.html" title="Twilio::TwiML::TwiML (class)">TwiML</a></span></li>
+          
+            <li class="next">Twilio::TwiML::VoiceResponse</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/twilio-ruby/twiml/voice_response.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Voice TwiML Response</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+  <h2>Instance Attribute Summary</h2>
+  
+  <h3 class="inherited">Attributes inherited from <span class='object_link'><a href="TwiML.html" title="Twilio::TwiML::TwiML (class)">TwiML</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="TwiML.html#indent-instance_method" title="Twilio::TwiML::TwiML#indent (method)">#indent</a></span>, <span class='object_link'><a href="TwiML.html#name-instance_method" title="Twilio::TwiML::TwiML#name (method)">#name</a></span></p>
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dial-instance_method" title="#dial (instance method)">#<strong>dial</strong>(number: nil, action: nil, method: nil, timeout: nil, hangup_on_star: nil, time_limit: nil, caller_id: nil, record: nil, trim: nil, recording_status_callback: nil, recording_status_callback_method: nil, **keyword_args) {|dial| ... } &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a &lt;Dial&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#echo-instance_method" title="#echo (instance method)">#<strong>echo</strong>(**keyword_args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create an &lt;Echo&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#enqueue-instance_method" title="#enqueue (instance method)">#<strong>enqueue</strong>(name, action: nil, method: nil, wait_url: nil, wait_url_method: nil, workflow_sid: nil, **keyword_args) {|enqueue| ... } &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create an &lt;Enqueue&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#gather-instance_method" title="#gather (instance method)">#<strong>gather</strong>(action: nil, method: nil, timeout: nil, finish_on_key: nil, num_digits: nil, partial_result_callback: nil, partial_result_callback_method: nil, language: nil, hints: nil, barge_in: nil, acknowledge_sound_url: nil, **keyword_args) {|gather| ... } &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a &lt;Gather&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hangup-instance_method" title="#hangup (instance method)">#<strong>hangup</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a &lt;Hangup&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong> {|_self| ... } &#x21d2; VoiceResponse </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a new &lt;Response&gt;.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#leave-instance_method" title="#leave (instance method)">#<strong>leave</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a &lt;Leave&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pause-instance_method" title="#pause (instance method)">#<strong>pause</strong>(length: nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a &lt;Pause&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#play-instance_method" title="#play (instance method)">#<strong>play</strong>(url: nil, loop: nil, digits: nil, **keyword_args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a &lt;Play&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#record-instance_method" title="#record (instance method)">#<strong>record</strong>(action: nil, method: nil, timeout: nil, finish_on_key: nil, max_length: nil, play_beep: nil, trim: nil, recording_status_callback: nil, recording_status_callback_method: nil, transcribe: nil, transcribe_callback: nil, **keyword_args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a &lt;Record&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#redirect-instance_method" title="#redirect (instance method)">#<strong>redirect</strong>(url, method: nil, **keyword_args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a &lt;Redirect&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reject-instance_method" title="#reject (instance method)">#<strong>reject</strong>(reason: nil, **keyword_args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a &lt;Reject&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#say-instance_method" title="#say (instance method)">#<strong>say</strong>(body, loop: nil, language: nil, voice: nil, **keyword_args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a &lt;Say&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sms-instance_method" title="#sms (instance method)">#<strong>sms</strong>(body, to: nil, from: nil, method: nil, action: nil, status_callback: nil, **keyword_args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a &lt;Sms&gt; element.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="TwiML.html" title="Twilio::TwiML::TwiML (class)">TwiML</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="TwiML.html#append-instance_method" title="Twilio::TwiML::TwiML#append (method)">#append</a></span>, <span class='object_link'><a href="TwiML.html#to_lower_camel_case-class_method" title="Twilio::TwiML::TwiML.to_lower_camel_case (method)">to_lower_camel_case</a></span>, <span class='object_link'><a href="TwiML.html#to_s-instance_method" title="Twilio::TwiML::TwiML#to_s (method)">#to_s</a></span>, <span class='object_link'><a href="TwiML.html#to_xml-instance_method" title="Twilio::TwiML::TwiML#to_xml (method)">#to_xml</a></span>, <span class='object_link'><a href="TwiML.html#xml-instance_method" title="Twilio::TwiML::TwiML#xml (method)">#xml</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong> {|_self| ... } &#x21d2; <tt><span class='object_link'><a href="" title="Twilio::TwiML::VoiceResponse (class)">VoiceResponse</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a new &lt;Response&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>_self</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Yield Parameters:</p>
+<ul class="yieldparam">
+  
+    <li>
+      
+        <span class='name'>_self</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Twilio::TwiML::VoiceResponse (class)">Twilio::TwiML::VoiceResponse</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the object that the method was called on</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6
+7
+8
+9
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 6</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@name</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Response</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>yield</span><span class='lparen'>(</span><span class='kw'>self</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="dial-instance_method">
+  
+    #<strong>dial</strong>(number: nil, action: nil, method: nil, timeout: nil, hangup_on_star: nil, time_limit: nil, caller_id: nil, record: nil, trim: nil, recording_status_callback: nil, recording_status_callback_method: nil, **keyword_args) {|dial| ... } &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a &lt;Dial&gt; element</p>
+
+<h2 id="label-Parameters-3A">Parameters:</h2>
+<dl class="rdoc-list note-list"><dt>number
+<dd>
+<p>phone number to dial</p>
+</dd><dt>action
+<dd>
+<p>action URL</p>
+</dd><dt>method
+<dd>
+<p>action HTTP method</p>
+</dd><dt>timeout
+<dd>
+<p>time to wait for answer</p>
+</dd><dt>hangup_on_star
+<dd>
+<p>hangup call on * press</p>
+</dd><dt>time_limit
+<dd>
+<p>max time length</p>
+</dd><dt>caller_id
+<dd>
+<p>caller ID to display</p>
+</dd><dt>record
+<dd>
+<p>record the call</p>
+</dd><dt>trim
+<dd>
+<p>trim the recording</p>
+</dd><dt>recording_status_callback
+<dd>
+<p>status callback URL</p>
+</dd><dt>recording_status_callback_method
+<dd>
+<p>status callback URL method</p>
+</dd><dt>keyword_args
+<dd>
+<p>additional attributes</p>
+</dd></dl>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with a &lt;Dial&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="#dial-instance_method" title="Twilio::TwiML::VoiceResponse#dial (method)">dial</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 30</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dial'>dial</span><span class='lparen'>(</span>
+  <span class='label'>number:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>action:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>method:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>timeout:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>hangup_on_star:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>time_limit:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>caller_id:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>record:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>trim:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>recording_status_callback:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>recording_status_callback_method:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span>
+<span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_dial'>dial</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Dial.html" title="Twilio::TwiML::Dial (class)">Dial</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Dial.html#initialize-instance_method" title="Twilio::TwiML::Dial#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+    <span class='label'>number:</span> <span class='id identifier rubyid_number'>number</span><span class='comma'>,</span>
+    <span class='label'>action:</span> <span class='id identifier rubyid_action'>action</span><span class='comma'>,</span>
+    <span class='label'>method:</span> <span class='id identifier rubyid_method'>method</span><span class='comma'>,</span>
+    <span class='label'>timeout:</span> <span class='id identifier rubyid_timeout'>timeout</span><span class='comma'>,</span>
+    <span class='label'>hangup_on_star:</span> <span class='id identifier rubyid_hangup_on_star'>hangup_on_star</span><span class='comma'>,</span>
+    <span class='label'>time_limit:</span> <span class='id identifier rubyid_time_limit'>time_limit</span><span class='comma'>,</span>
+    <span class='label'>caller_id:</span> <span class='id identifier rubyid_caller_id'>caller_id</span><span class='comma'>,</span>
+    <span class='label'>record:</span> <span class='id identifier rubyid_record'>record</span><span class='comma'>,</span>
+    <span class='label'>trim:</span> <span class='id identifier rubyid_trim'>trim</span><span class='comma'>,</span>
+    <span class='label'>recording_status_callback:</span> <span class='id identifier rubyid_recording_status_callback'>recording_status_callback</span><span class='comma'>,</span>
+    <span class='label'>recording_status_callback_method:</span> <span class='id identifier rubyid_recording_status_callback_method'>recording_status_callback_method</span><span class='comma'>,</span>
+    <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span>
+  <span class='rparen'>)</span>
+
+  <span class='kw'>yield</span><span class='lparen'>(</span><span class='id identifier rubyid_dial'>dial</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='id identifier rubyid_dial'>dial</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="echo-instance_method">
+  
+    #<strong>echo</strong>(**keyword_args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create an &lt;Echo&gt; element</p>
+
+<h2 id="label-Parameters-3A">Parameters:</h2>
+<dl class="rdoc-list note-list"><dt>keyword_args
+<dd>
+<p>attributes</p>
+</dd></dl>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with an &lt;Echo&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 71</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_echo'>echo</span><span class='lparen'>(</span><span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Echo.html" title="Twilio::TwiML::Echo (class)">Echo</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Echo.html#initialize-instance_method" title="Twilio::TwiML::Echo#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="enqueue-instance_method">
+  
+    #<strong>enqueue</strong>(name, action: nil, method: nil, wait_url: nil, wait_url_method: nil, workflow_sid: nil, **keyword_args) {|enqueue| ... } &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create an &lt;Enqueue&gt; element</p>
+
+<h2 id="label-Parameters-3A">Parameters:</h2>
+<dl class="rdoc-list note-list"><dt>name
+<dd>
+<p>friendly name</p>
+</dd><dt>action
+<dd>
+<p>action URL</p>
+</dd><dt>method
+<dd>
+<p>action URL method</p>
+</dd><dt>wait_url
+<dd>
+<p>wait URL</p>
+</dd><dt>wait_url_method
+<dd>
+<p>wait URL method</p>
+</dd><dt>workflow_sid
+<dd>
+<p>TaskRouter workflow SID</p>
+</dd><dt>keyword_args
+<dd>
+<p>additional attributes</p>
+</dd></dl>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with an &lt;Enqueue&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="#enqueue-instance_method" title="Twilio::TwiML::VoiceResponse#enqueue (method)">enqueue</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_enqueue'>enqueue</span><span class='lparen'>(</span>
+  <span class='id identifier rubyid_name'>name</span><span class='comma'>,</span>
+  <span class='label'>action:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>method:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>wait_url:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>wait_url_method:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>workflow_sid:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span>
+<span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_enqueue'>enqueue</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Enqueue.html" title="Twilio::TwiML::Enqueue (class)">Enqueue</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Enqueue.html#initialize-instance_method" title="Twilio::TwiML::Enqueue#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+    <span class='id identifier rubyid_name'>name</span><span class='comma'>,</span>
+    <span class='label'>action:</span> <span class='id identifier rubyid_action'>action</span><span class='comma'>,</span>
+    <span class='label'>method:</span> <span class='id identifier rubyid_method'>method</span><span class='comma'>,</span>
+    <span class='label'>wait_url:</span> <span class='id identifier rubyid_wait_url'>wait_url</span><span class='comma'>,</span>
+    <span class='label'>wait_url_method:</span> <span class='id identifier rubyid_wait_url_method'>wait_url_method</span><span class='comma'>,</span>
+    <span class='label'>workflow_sid:</span> <span class='id identifier rubyid_workflow_sid'>workflow_sid</span><span class='comma'>,</span>
+    <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span>
+  <span class='rparen'>)</span>
+
+  <span class='kw'>yield</span><span class='lparen'>(</span><span class='id identifier rubyid_enqueue'>enqueue</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='id identifier rubyid_enqueue'>enqueue</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="gather-instance_method">
+  
+    #<strong>gather</strong>(action: nil, method: nil, timeout: nil, finish_on_key: nil, num_digits: nil, partial_result_callback: nil, partial_result_callback_method: nil, language: nil, hints: nil, barge_in: nil, acknowledge_sound_url: nil, **keyword_args) {|gather| ... } &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a &lt;Gather&gt; element</p>
+
+<h2 id="label-Parameters-3A">Parameters:</h2>
+<dl class="rdoc-list note-list"><dt>action
+<dd>
+<p>action URL</p>
+</dd><dt>method
+<dd>
+<p>action URL method</p>
+</dd><dt>timeout
+<dd>
+<p>time to wait while gathering input</p>
+</dd><dt>finish_on_key
+<dd>
+<p>finish on key press</p>
+</dd><dt>num_digits
+<dd>
+<p>digits to collect</p>
+</dd><dt>partial_result_callback
+<dd>
+<p>callback url</p>
+</dd><dt>partial_result_callback_method
+<dd>
+<p>callback method</p>
+</dd><dt>language
+<dd>
+<p>locale string</p>
+</dd><dt>hints
+<dd>
+<p>speech recognition hints</p>
+</dd><dt>barge_in
+<dd>
+<p>stop playing media upon speech</p>
+</dd><dt>acknowledge_sound_url
+<dd>
+<p>url to hit when sound starts</p>
+</dd><dt>keyword_args
+<dd>
+<p>additional attributes</p>
+</dd></dl>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with a &lt;Gather&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="#gather-instance_method" title="Twilio::TwiML::VoiceResponse#gather (method)">gather</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 130</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_gather'>gather</span><span class='lparen'>(</span>
+  <span class='label'>action:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>method:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>timeout:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>finish_on_key:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>num_digits:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>partial_result_callback:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>partial_result_callback_method:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>language:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>hints:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>barge_in:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>acknowledge_sound_url:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span>
+<span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_gather'>gather</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Gather.html" title="Twilio::TwiML::Gather (class)">Gather</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Gather.html#initialize-instance_method" title="Twilio::TwiML::Gather#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+    <span class='label'>action:</span> <span class='id identifier rubyid_action'>action</span><span class='comma'>,</span>
+    <span class='label'>method:</span> <span class='id identifier rubyid_method'>method</span><span class='comma'>,</span>
+    <span class='label'>timeout:</span> <span class='id identifier rubyid_timeout'>timeout</span><span class='comma'>,</span>
+    <span class='label'>finish_on_key:</span> <span class='id identifier rubyid_finish_on_key'>finish_on_key</span><span class='comma'>,</span>
+    <span class='label'>num_digits:</span> <span class='id identifier rubyid_num_digits'>num_digits</span><span class='comma'>,</span>
+    <span class='label'>partial_result_callback:</span> <span class='id identifier rubyid_partial_result_callback'>partial_result_callback</span><span class='comma'>,</span>
+    <span class='label'>partial_result_callback_method:</span> <span class='id identifier rubyid_partial_result_callback_method'>partial_result_callback_method</span><span class='comma'>,</span>
+    <span class='label'>language:</span> <span class='id identifier rubyid_language'>language</span><span class='comma'>,</span>
+    <span class='label'>hints:</span> <span class='id identifier rubyid_hints'>hints</span><span class='comma'>,</span>
+    <span class='label'>barge_in:</span> <span class='id identifier rubyid_barge_in'>barge_in</span><span class='comma'>,</span>
+    <span class='label'>acknowledge_sound_url:</span> <span class='id identifier rubyid_acknowledge_sound_url'>acknowledge_sound_url</span><span class='comma'>,</span>
+    <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span>
+  <span class='rparen'>)</span>
+
+  <span class='kw'>yield</span><span class='lparen'>(</span><span class='id identifier rubyid_gather'>gather</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='id identifier rubyid_gather'>gather</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="hangup-instance_method">
+  
+    #<strong>hangup</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a &lt;Hangup&gt; element</p>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with a &lt;Hangup&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+168
+169
+170</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 168</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_hangup'>hangup</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Hangup.html" title="Twilio::TwiML::Hangup (class)">Hangup</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Hangup.html#initialize-instance_method" title="Twilio::TwiML::Hangup#initialize (method)">new</a></span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="leave-instance_method">
+  
+    #<strong>leave</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a &lt;Leave&gt; element</p>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with a &lt;Leave&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+176
+177
+178</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 176</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_leave'>leave</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Leave.html" title="Twilio::TwiML::Leave (class)">Leave</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Leave.html#initialize-instance_method" title="Twilio::TwiML::Leave#initialize (method)">new</a></span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="pause-instance_method">
+  
+    #<strong>pause</strong>(length: nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a &lt;Pause&gt; element</p>
+
+<h2 id="label-Parameters-3A">Parameters:</h2>
+<dl class="rdoc-list note-list"><dt>length
+<dd>
+<p>time in seconds to pause</p>
+</dd></dl>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with a &lt;Pause&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+187
+188
+189</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 187</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_pause'>pause</span><span class='lparen'>(</span><span class='label'>length:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Pause.html" title="Twilio::TwiML::Pause (class)">Pause</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Pause.html#initialize-instance_method" title="Twilio::TwiML::Pause#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>length:</span> <span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="play-instance_method">
+  
+    #<strong>play</strong>(url: nil, loop: nil, digits: nil, **keyword_args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a &lt;Play&gt; element</p>
+
+<h2 id="label-Parameters-3A">Parameters:</h2>
+<dl class="rdoc-list note-list"><dt>url
+<dd>
+<p>url to play</p>
+</dd><dt>loop
+<dd>
+<p>times to loop</p>
+</dd><dt>digits
+<dd>
+<p>play DTMF tones during a call</p>
+</dd><dt>keyword_args
+<dd>
+<p>additional attributes</p>
+</dd></dl>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with a &lt;Play&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+201
+202
+203
+204
+205
+206
+207
+208</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 201</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_play'>play</span><span class='lparen'>(</span><span class='label'>url:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>loop:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>digits:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Play.html" title="Twilio::TwiML::Play (class)">Play</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Play.html#initialize-instance_method" title="Twilio::TwiML::Play#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+           <span class='label'>url:</span> <span class='id identifier rubyid_url'>url</span><span class='comma'>,</span>
+           <span class='label'>loop:</span> <span class='id identifier rubyid_loop'>loop</span><span class='comma'>,</span>
+           <span class='label'>digits:</span> <span class='id identifier rubyid_digits'>digits</span><span class='comma'>,</span>
+           <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span>
+  <span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="record-instance_method">
+  
+    #<strong>record</strong>(action: nil, method: nil, timeout: nil, finish_on_key: nil, max_length: nil, play_beep: nil, trim: nil, recording_status_callback: nil, recording_status_callback_method: nil, transcribe: nil, transcribe_callback: nil, **keyword_args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a &lt;Record&gt; element</p>
+
+<h2 id="label-Parameters-3A">Parameters:</h2>
+<dl class="rdoc-list note-list"><dt>action
+<dd>
+<p>action URL</p>
+</dd><dt>method
+<dd>
+<p>action URL method</p>
+</dd><dt>timeout
+<dd>
+<p>timeout for recording</p>
+</dd><dt>finish_on_key
+<dd>
+<p>finish recording on key</p>
+</dd><dt>max_length
+<dd>
+<p>max length to record</p>
+</dd><dt>play_beep
+<dd>
+<p>play beep</p>
+</dd><dt>trim
+<dd>
+<p>trim the recording</p>
+</dd><dt>recording_status_callback
+<dd>
+<p>status callback for the recordings</p>
+</dd><dt>recording_status_callback_method
+<dd>
+<p>status callback method</p>
+</dd><dt>transcribe
+<dd>
+<p>transcribe the recording</p>
+</dd><dt>transcribe_callback
+<dd>
+<p>transcribe callback URL</p>
+</dd><dt>keyword_args
+<dd>
+<p>additional attributes</p>
+</dd></dl>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with a &lt;Record&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 228</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_record'>record</span><span class='lparen'>(</span>
+  <span class='label'>action:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>method:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>timeout:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>finish_on_key:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>max_length:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>play_beep:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>trim:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>recording_status_callback:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>recording_status_callback_method:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>transcribe:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='label'>transcribe_callback:</span> <span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span>
+<span class='rparen'>)</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Record.html" title="Twilio::TwiML::Record (class)">Record</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Record.html#initialize-instance_method" title="Twilio::TwiML::Record#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+           <span class='label'>action:</span> <span class='id identifier rubyid_action'>action</span><span class='comma'>,</span>
+           <span class='label'>method:</span> <span class='id identifier rubyid_method'>method</span><span class='comma'>,</span>
+           <span class='label'>timeout:</span> <span class='id identifier rubyid_timeout'>timeout</span><span class='comma'>,</span>
+           <span class='label'>finish_on_key:</span> <span class='id identifier rubyid_finish_on_key'>finish_on_key</span><span class='comma'>,</span>
+           <span class='label'>max_length:</span> <span class='id identifier rubyid_max_length'>max_length</span><span class='comma'>,</span>
+           <span class='label'>play_beep:</span> <span class='id identifier rubyid_play_beep'>play_beep</span><span class='comma'>,</span>
+           <span class='label'>trim:</span> <span class='id identifier rubyid_trim'>trim</span><span class='comma'>,</span>
+           <span class='label'>recording_status_callback:</span> <span class='id identifier rubyid_recording_status_callback'>recording_status_callback</span><span class='comma'>,</span>
+           <span class='label'>recording_status_callback_method:</span> <span class='id identifier rubyid_recording_status_callback_method'>recording_status_callback_method</span><span class='comma'>,</span>
+           <span class='label'>transcribe:</span> <span class='id identifier rubyid_transcribe'>transcribe</span><span class='comma'>,</span>
+           <span class='label'>transcribe_callback:</span> <span class='id identifier rubyid_transcribe_callback'>transcribe_callback</span><span class='comma'>,</span>
+           <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span>
+  <span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="redirect-instance_method">
+  
+    #<strong>redirect</strong>(url, method: nil, **keyword_args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a &lt;Redirect&gt; element</p>
+
+<h2 id="label-Parameters-3A">Parameters:</h2>
+<dl class="rdoc-list note-list"><dt>url
+<dd>
+<p>redirect URL</p>
+</dd><dt>method
+<dd>
+<p>redirect method</p>
+</dd><dt>keyword_args
+<dd>
+<p>additional attributes</p>
+</dd></dl>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with a &lt;Redirect&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+267
+268
+269</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 267</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_redirect'>redirect</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='label'>method:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Redirect.html" title="Twilio::TwiML::Redirect (class)">Redirect</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Redirect.html#initialize-instance_method" title="Twilio::TwiML::Redirect#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='label'>method:</span> <span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reject-instance_method">
+  
+    #<strong>reject</strong>(reason: nil, **keyword_args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a &lt;Reject&gt; element</p>
+
+<h2 id="label-Parameters-3A">Parameters:</h2>
+<dl class="rdoc-list note-list"><dt>reason
+<dd>
+<p>rejection reason</p>
+</dd><dt>keyword_args
+<dd>
+<p>additional attributes</p>
+</dd></dl>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with a &lt;Reject&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+279
+280
+281</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 279</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_reject'>reject</span><span class='lparen'>(</span><span class='label'>reason:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Reject.html" title="Twilio::TwiML::Reject (class)">Reject</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Reject.html#initialize-instance_method" title="Twilio::TwiML::Reject#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>reason:</span> <span class='id identifier rubyid_reason'>reason</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="say-instance_method">
+  
+    #<strong>say</strong>(body, loop: nil, language: nil, voice: nil, **keyword_args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a &lt;Say&gt; element</p>
+
+<h2 id="label-Parameters-3A">Parameters:</h2>
+<dl class="rdoc-list note-list"><dt>body
+<dd>
+<p>message body</p>
+</dd><dt>loop
+<dd>
+<p>times to loop</p>
+</dd><dt>language
+<dd>
+<p>language of message</p>
+</dd><dt>voice
+<dd>
+<p>voice to use</p>
+</dd><dt>keyword_args
+<dd>
+<p>additional attributes</p>
+</dd></dl>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with a &lt;Say&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+294
+295
+296
+297
+298
+299
+300
+301
+302</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 294</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_say'>say</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='label'>loop:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>language:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>voice:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Say.html" title="Twilio::TwiML::Say (class)">Say</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Say.html#initialize-instance_method" title="Twilio::TwiML::Say#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+           <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span>
+           <span class='label'>loop:</span> <span class='id identifier rubyid_loop'>loop</span><span class='comma'>,</span>
+           <span class='label'>language:</span> <span class='id identifier rubyid_language'>language</span><span class='comma'>,</span>
+           <span class='label'>voice:</span> <span class='id identifier rubyid_voice'>voice</span><span class='comma'>,</span>
+           <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span>
+  <span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sms-instance_method">
+  
+    #<strong>sms</strong>(body, to: nil, from: nil, method: nil, action: nil, status_callback: nil, **keyword_args)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a &lt;Sms&gt; element</p>
+
+<h2 id="label-Parameters-3A">Parameters:</h2>
+<dl class="rdoc-list note-list"><dt>body
+<dd>
+<p>body of message</p>
+</dd><dt>to
+<dd>
+<p>to phone number</p>
+</dd><dt>from_
+<dd>
+<p>from phone number</p>
+</dd><dt>method
+<dd>
+<p>action URL method</p>
+</dd><dt>action
+<dd>
+<p>action URL</p>
+</dd><dt>status_callback
+<dd>
+<p>status callback URL</p>
+</dd><dt>keyword_args
+<dd>
+<p>additional attributes</p>
+</dd></dl>
+
+<h2 id="label-Returns-3A">Returns:</h2>
+
+<p>A &lt;Response&gt; element with a &lt;Sms&gt; child element</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/twiml/voice_response.rb', line 317</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sms'>sms</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='label'>to:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>from:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>method:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>action:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>status_callback:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Sms.html" title="Twilio::TwiML::Sms (class)">Sms</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Sms.html#initialize-instance_method" title="Twilio::TwiML::Sms#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+           <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span>
+           <span class='label'>to:</span> <span class='id identifier rubyid_to'>to</span><span class='comma'>,</span>
+           <span class='label'>from:</span> <span class='id identifier rubyid_from'>from</span><span class='comma'>,</span>
+           <span class='label'>method:</span> <span class='id identifier rubyid_method'>method</span><span class='comma'>,</span>
+           <span class='label'>action:</span> <span class='id identifier rubyid_action'>action</span><span class='comma'>,</span>
+           <span class='label'>status_callback:</span> <span class='id identifier rubyid_status_callback'>status_callback</span><span class='comma'>,</span>
+           <span class='op'>**</span><span class='id identifier rubyid_keyword_args'>keyword_args</span>
+  <span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Thu Jul 13 13:46:05 2017 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.9 (ruby-2.4.1).
+</div>
+
+    </div>
+  </body>
+</html>
