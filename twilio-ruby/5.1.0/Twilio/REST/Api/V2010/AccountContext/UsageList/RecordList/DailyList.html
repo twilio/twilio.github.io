@@ -640,11 +640,10 @@ never return more than limit.  Default is no limit</p>
       
         &mdash;
         <div class='inline'>
-<p>Number of records to fetch per request, when not set will                  
-use the default value of 50 records.  If no page_size is                   
-defined but a limit is defined, stream() will attempt to read              
-the limit with the most efficient page size,                      i.e.
-min(limit, 1000)</p>
+<p>Number of records to fetch per request, when not set will use the default
+value of 50 records.  If no page_size is defined but a limit is defined,
+stream() will attempt to read the limit with the most efficient page size,
+i.e. min(limit, 1000)</p>
 </div>
       
     </li>
@@ -970,9 +969,8 @@ lazily loads records as efficiently as possible until the limit is reached.</p>
       
         &mdash;
         <div class='inline'>
-<p>Upper limit for the number of records to return.                  stream()
-guarantees to never return more than limit.                  Default is no
-limit</p>
+<p>Upper limit for the number of records to return. stream() guarantees to
+never return more than limit. Default is no limit.</p>
 </div>
       
     </li>
@@ -988,14 +986,10 @@ limit</p>
       
         &mdash;
         <div class='inline'>
-<p>Number of records to fetch per request, when                      not set
-will use the default value of 50 records.                      If no
-page_size is defined</p>
-
-<pre class="code ruby"><code class="ruby">but a limit is defined, stream() will attempt to                      read the</code></pre>
-
-<p>limit with the most efficient page size,                       i.e.
-min(limit, 1000)</p>
+<p>Number of records to fetch per request, when not set will use the default
+value of 50 records. If no page_size is defined but a limit is defined,
+stream() will attempt to read the limit with the most efficient page size,
+i.e. min(limit, 1000)</p>
 </div>
       
     </li>
@@ -1106,7 +1100,7 @@ min(limit, 1000)</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Jul 13 13:05:47 2017 by
+  Generated on Thu Jul 27 12:42:44 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.4.1).
 </div>

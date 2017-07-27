@@ -96,11 +96,23 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb</dd>
+    <dd>lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb<span class="defines">,<br />
+  lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number/assigned_add_on.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number/assigned_add_on/assigned_add_on_extension.rb</span>
+</dd>
   </dl>
   
 </div>
 
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnContext.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnContext (class)">AssignedAddOnContext</a></span>, <span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnInstance.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnInstance (class)">AssignedAddOnInstance</a></span>, <span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnList.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnList (class)">AssignedAddOnList</a></span>, <span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnPage.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnPage (class)">AssignedAddOnPage</a></span>
+    
+  
+</p>
 
 
 
@@ -115,6 +127,30 @@
     </h2>
 
     <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assigned_add_ons-instance_method" title="#assigned_add_ons (instance method)">#<strong>assigned_add_ons</strong>(sid = :unset)  &#x21d2; AssignedAddOnList, AssignedAddOnContext </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the assigned_add_ons.</p>
+</div></span>
+  
+</li>
+
       
         <li class="public ">
   <span class="summary_signature">
@@ -337,7 +373,10 @@
 330
 331
 332
-333</pre>
+333
+334
+335
+336</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb', line 324</span>
@@ -351,6 +390,9 @@
       <span class='label'>sid:</span> <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
   <span class='rbrace'>}</span>
   <span class='ivar'>@uri</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/Accounts/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:account_sid</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>/IncomingPhoneNumbers/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>.json</span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='comment'># Dependents
+</span>  <span class='ivar'>@assigned_add_ons</span> <span class='op'>=</span> <span class='kw'>nil</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -365,7 +407,126 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="delete-instance_method">
+  <h3 class="signature first" id="assigned_add_ons-instance_method">
+  
+    #<strong>assigned_add_ons</strong>(sid = :unset)  &#x21d2; <tt><span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnList.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnList (class)">AssignedAddOnList</a></span></tt>, <tt><span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnContext.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnContext (class)">AssignedAddOnContext</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the assigned_add_ons</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnList.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnList (class)">AssignedAddOnList</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnContext.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnContext (class)">AssignedAddOnContext</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if sid was passed.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb', line 453</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_assigned_add_ons'>assigned_add_ons</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sid cannot be nil</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'><span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnContext.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnContext (class)">AssignedAddOnContext</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnContext.html#initialize-instance_method" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnContext#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:account_sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>unless</span> <span class='ivar'>@assigned_add_ons</span>
+    <span class='ivar'>@assigned_add_ons</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnList.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnList (class)">AssignedAddOnList</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="IncomingPhoneNumberContext/AssignedAddOnList.html#initialize-instance_method" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext::AssignedAddOnList#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:account_sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='label'>resource_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@assigned_add_ons</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete-instance_method">
   
     #<strong>delete</strong>  &#x21d2; <tt>Boolean</tt> 
   
@@ -408,12 +569,12 @@
       <pre class="lines">
 
 
-442
-443
-444</pre>
+445
+446
+447</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb', line 442</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb', line 445</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete'>delete</span>
   <span class='ivar'>@version</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>delete</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@uri</span><span class='rparen'>)</span>
@@ -467,9 +628,6 @@
       <pre class="lines">
 
 
-422
-423
-424
 425
 426
 427
@@ -482,10 +640,13 @@
 434
 435
 436
-437</pre>
+437
+438
+439
+440</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb', line 422</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb', line 425</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_fetch'>fetch</span>
   <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../../../Twilio.html" title="Twilio (module)">Twilio</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../../../Values.html" title="Twilio::Values (class)">Values</a></span></span><span class='period'>.</span><span class='id identifier rubyid_of'><span class='object_link'><a href="../../../../Values.html#of-class_method" title="Twilio::Values.of (method)">of</a></span></span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
@@ -534,13 +695,13 @@
       <pre class="lines">
 
 
-448
-449
-450
-451</pre>
+478
+479
+480
+481</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb', line 448</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb', line 478</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
   <span class='id identifier rubyid_context'>context</span> <span class='op'>=</span> <span class='ivar'>@solution</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_v'>v</span><span class='op'>|</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_k'>k</span><span class='embexpr_end'>}</span><span class='tstring_content'>: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_v'>v</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>,</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -912,9 +1073,6 @@ and vice versa.</p>
       <pre class="lines">
 
 
-383
-384
-385
 386
 387
 388
@@ -946,10 +1104,13 @@ and vice versa.</p>
 414
 415
 416
-417</pre>
+417
+418
+419
+420</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb', line 383</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb', line 386</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='label'>api_version:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>friendly_name:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>sms_application_sid:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>sms_fallback_method:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>sms_fallback_url:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>sms_method:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>sms_url:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>status_callback:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>status_callback_method:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>voice_application_sid:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>voice_caller_id_lookup:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>voice_fallback_method:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>voice_fallback_url:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>voice_method:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>voice_url:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>emergency_status:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>emergency_address_sid:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>trunk_sid:</span> <span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../../../Twilio.html" title="Twilio (module)">Twilio</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../../../Values.html" title="Twilio::Values (class)">Values</a></span></span><span class='period'>.</span><span class='id identifier rubyid_of'><span class='object_link'><a href="../../../../Values.html#of-class_method" title="Twilio::Values.of (method)">of</a></span></span><span class='lparen'>(</span><span class='lbrace'>{</span>
@@ -996,7 +1157,7 @@ and vice versa.</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Jul 13 13:05:53 2017 by
+  Generated on Thu Jul 27 12:42:53 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.4.1).
 </div>

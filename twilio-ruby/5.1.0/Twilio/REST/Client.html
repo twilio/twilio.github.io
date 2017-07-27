@@ -521,6 +521,30 @@
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#fax-instance_method" title="#fax (instance method)">#<strong>fax</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the Fax Twilio Domain.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#incoming_phone_numbers-instance_method" title="#incoming_phone_numbers (instance method)">#<strong>incoming_phone_numbers</strong>(sid = :unset)  &#x21d2; Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberInstance, Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberList </a>
     
 
@@ -661,6 +685,30 @@
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#messaging-instance_method" title="#messaging (instance method)">#<strong>messaging</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the Messaging Twilio Domain.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#monitor-instance_method" title="#monitor (instance method)">#<strong>monitor</strong>  &#x21d2; Object </a>
     
 
@@ -751,6 +799,30 @@
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#notify-instance_method" title="#notify (instance method)">#<strong>notify</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the Notify Twilio Domain.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#outgoing_caller_ids-instance_method" title="#outgoing_caller_ids (instance method)">#<strong>outgoing_caller_ids</strong>(sid = :unset)  &#x21d2; Twilio::REST::Api::V2010::AccountContext::OutgoingCallerIdInstance, Twilio::REST::Api::V2010::AccountContext::OutgoingCallerIdList </a>
     
 
@@ -766,6 +838,30 @@
 
   
     <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#preview-instance_method" title="#preview (instance method)">#<strong>preview</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the Preview Twilio Domain.</p>
+</div></span>
   
 </li>
 
@@ -925,6 +1021,30 @@ Authentication information is automatically added if none is provided.</p>
 
   
     <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sync-instance_method" title="#sync (instance method)">#<strong>sync</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the Sync Twilio Domain.</p>
+</div></span>
   
 </li>
 
@@ -1113,6 +1233,30 @@ Authentication information is automatically added if none is provided.</p>
 </li>
 
       
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#wireless-instance_method" title="#wireless (instance method)">#<strong>wireless</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the Wireless Twilio Domain.</p>
+</div></span>
+  
+</li>
+
+      
     </ul>
   
 
@@ -1165,7 +1309,13 @@ Authentication information is automatically added if none is provided.</p>
 33
 34
 35
-36</pre>
+36
+37
+38
+39
+40
+41
+42</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 16</span>
@@ -1183,13 +1333,19 @@ Authentication information is automatically added if none is provided.</p>
 </span>  <span class='ivar'>@accounts</span> <span class='op'>=</span> <span class='kw'>nil</span>
   <span class='ivar'>@api</span> <span class='op'>=</span> <span class='kw'>nil</span>
   <span class='ivar'>@chat</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@fax</span> <span class='op'>=</span> <span class='kw'>nil</span>
   <span class='ivar'>@ip_messaging</span> <span class='op'>=</span> <span class='kw'>nil</span>
   <span class='ivar'>@lookups</span> <span class='op'>=</span> <span class='kw'>nil</span>
   <span class='ivar'>@monitor</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@notify</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@preview</span> <span class='op'>=</span> <span class='kw'>nil</span>
   <span class='ivar'>@pricing</span> <span class='op'>=</span> <span class='kw'>nil</span>
   <span class='ivar'>@taskrouter</span> <span class='op'>=</span> <span class='kw'>nil</span>
   <span class='ivar'>@trunking</span> <span class='op'>=</span> <span class='kw'>nil</span>
   <span class='ivar'>@video</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@messaging</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@wireless</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@sync</span> <span class='op'>=</span> <span class='kw'>nil</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1492,12 +1648,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-79
-80
-81</pre>
+85
+86
+87</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 79</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 85</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_accounts'>accounts</span>
   <span class='ivar'>@accounts</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Accounts.html" title="Twilio::REST::Accounts (class)">Accounts</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Accounts.html#initialize-instance_method" title="Twilio::REST::Accounts#initialize (method)">new</a></span></span> <span class='kw'>self</span>
@@ -1580,12 +1736,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-141
-142
-143</pre>
+183
+184
+185</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 141</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 183</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_addresses'>addresses</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_addresses'>addresses</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
@@ -1621,12 +1777,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-85
-86
-87</pre>
+91
+92
+93</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 85</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 91</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_api'>api</span>
   <span class='ivar'>@api</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Api.html" title="Twilio::REST::Api (class)">Api</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Api.html#initialize-instance_method" title="Twilio::REST::Api#initialize (method)">new</a></span></span> <span class='kw'>self</span>
@@ -1709,12 +1865,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-150
-151
-152</pre>
+192
+193
+194</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 150</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 192</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_applications'>applications</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_applications'>applications</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
@@ -1797,12 +1953,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-159
-160
-161</pre>
+201
+202
+203</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 159</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 201</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_authorized_connect_apps'>authorized_connect_apps</span><span class='lparen'>(</span><span class='id identifier rubyid_connect_app_sid'>connect_app_sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_authorized_connect_apps'>authorized_connect_apps</span><span class='lparen'>(</span><span class='id identifier rubyid_connect_app_sid'>connect_app_sid</span><span class='rparen'>)</span>
@@ -1885,12 +2041,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-167
-168
-169</pre>
+209
+210
+211</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 167</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 209</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_available_phone_numbers'>available_phone_numbers</span><span class='lparen'>(</span><span class='id identifier rubyid_country_code'>country_code</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_available_phone_numbers'>available_phone_numbers</span><span class='lparen'>(</span><span class='id identifier rubyid_country_code'>country_code</span><span class='rparen'>)</span>
@@ -1973,12 +2129,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-176
-177
-178</pre>
+218
+219
+220</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 176</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 218</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_calls'>calls</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_calls'>calls</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
@@ -2014,12 +2170,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-91
-92
-93</pre>
+97
+98
+99</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 91</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 97</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_chat'>chat</span>
   <span class='ivar'>@chat</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Chat.html" title="Twilio::REST::Chat (class)">Chat</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Chat.html#initialize-instance_method" title="Twilio::REST::Chat#initialize (method)">new</a></span></span> <span class='kw'>self</span>
@@ -2102,12 +2258,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-185
-186
-187</pre>
+227
+228
+229</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 185</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 227</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_conferences'>conferences</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_conferences'>conferences</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
@@ -2190,15 +2346,56 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-193
-194
-195</pre>
+235
+236
+237</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 193</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 235</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_connect_apps'>connect_apps</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_connect_apps'>connect_apps</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="fax-instance_method">
+  
+    #<strong>fax</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the Fax Twilio Domain</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+103
+104
+105</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 103</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_fax'>fax</span>
+  <span class='ivar'>@fax</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Fax.html" title="Twilio::REST::Fax (class)">Fax</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Fax.html#initialize-instance_method" title="Twilio::REST::Fax#initialize (method)">new</a></span></span> <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2278,12 +2475,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-202
-203
-204</pre>
+244
+245
+246</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 202</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 244</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_incoming_phone_numbers'>incoming_phone_numbers</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_incoming_phone_numbers'>incoming_phone_numbers</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
@@ -2319,12 +2516,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-97
-98
-99</pre>
+109
+110
+111</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 97</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 109</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ip_messaging'>ip_messaging</span>
   <span class='ivar'>@ip_messaging</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="IpMessaging.html" title="Twilio::REST::IpMessaging (class)">IpMessaging</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="IpMessaging.html#initialize-instance_method" title="Twilio::REST::IpMessaging#initialize (method)">new</a></span></span> <span class='kw'>self</span>
@@ -2407,12 +2604,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-210
-211
-212</pre>
+252
+253
+254</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 210</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 252</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_keys'>keys</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
@@ -2448,12 +2645,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-103
-104
-105</pre>
+115
+116
+117</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 103</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 115</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_lookups'>lookups</span>
   <span class='ivar'>@lookups</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Lookups.html" title="Twilio::REST::Lookups (class)">Lookups</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Lookups.html#initialize-instance_method" title="Twilio::REST::Lookups#initialize (method)">new</a></span></span> <span class='kw'>self</span>
@@ -2536,15 +2733,56 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-219
-220
-221</pre>
+261
+262
+263</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 219</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 261</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_messages'>messages</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_messages'>messages</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="messaging-instance_method">
+  
+    #<strong>messaging</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the Messaging Twilio Domain</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+163
+164
+165</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 163</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_messaging'>messaging</span>
+  <span class='ivar'>@messaging</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Messaging.html" title="Twilio::REST::Messaging (class)">Messaging</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Messaging.html#initialize-instance_method" title="Twilio::REST::Messaging#initialize (method)">new</a></span></span> <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2577,12 +2815,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-109
-110
-111</pre>
+121
+122
+123</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 109</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 121</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_monitor'>monitor</span>
   <span class='ivar'>@monitor</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Monitor.html" title="Twilio::REST::Monitor (class)">Monitor</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Monitor.html#initialize-instance_method" title="Twilio::REST::Monitor#initialize (method)">new</a></span></span> <span class='kw'>self</span>
@@ -2629,12 +2867,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-225
-226
-227</pre>
+267
+268
+269</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 225</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 267</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_new_keys'>new_keys</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_new_keys'>new_keys</span>
@@ -2681,12 +2919,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-231
-232
-233</pre>
+273
+274
+275</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 231</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 273</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_new_signing_keys'>new_signing_keys</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_new_signing_keys'>new_signing_keys</span>
@@ -2769,15 +3007,56 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-240
-241
-242</pre>
+282
+283
+284</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 240</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 282</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_notifications'>notifications</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_notifications'>notifications</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="notify-instance_method">
+  
+    #<strong>notify</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the Notify Twilio Domain</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+127
+128
+129</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 127</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_notify'>notify</span>
+  <span class='ivar'>@notify</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Notify.html" title="Twilio::REST::Notify (class)">Notify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Notify.html#initialize-instance_method" title="Twilio::REST::Notify#initialize (method)">new</a></span></span> <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2857,15 +3136,56 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-249
-250
-251</pre>
+291
+292
+293</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 249</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 291</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_outgoing_caller_ids'>outgoing_caller_ids</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_outgoing_caller_ids'>outgoing_caller_ids</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="preview-instance_method">
+  
+    #<strong>preview</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the Preview Twilio Domain</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+133
+134
+135</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 133</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_preview'>preview</span>
+  <span class='ivar'>@preview</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Preview.html" title="Twilio::REST::Preview (class)">Preview</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Preview.html#initialize-instance_method" title="Twilio::REST::Preview#initialize (method)">new</a></span></span> <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2898,12 +3218,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-115
-116
-117</pre>
+139
+140
+141</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 139</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_pricing'>pricing</span>
   <span class='ivar'>@pricing</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Pricing.html" title="Twilio::REST::Pricing (class)">Pricing</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Pricing.html#initialize-instance_method" title="Twilio::REST::Pricing#initialize (method)">new</a></span></span> <span class='kw'>self</span>
@@ -2986,12 +3306,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-257
-258
-259</pre>
+299
+300
+301</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 257</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 299</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_queues'>queues</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_queues'>queues</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
@@ -3074,12 +3394,12 @@ Authentication information is automatically added if none is provided.</p>
       <pre class="lines">
 
 
-266
-267
-268</pre>
+308
+309
+310</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 266</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 308</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_recordings'>recordings</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_recordings'>recordings</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
@@ -3116,12 +3436,6 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-41
-42
-43
-44
-45
-46
 47
 48
 49
@@ -3150,10 +3464,16 @@ Authentication information is automatically added if none is provided</p>
 72
 73
 74
-75</pre>
+75
+76
+77
+78
+79
+80
+81</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 47</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span><span class='id identifier rubyid_host'>host</span><span class='comma'>,</span> <span class='id identifier rubyid_port'>port</span><span class='comma'>,</span> <span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_uri'>uri</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='id identifier rubyid_auth'>auth</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_timeout'>timeout</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_auth'>auth</span> <span class='op'>||=</span> <span class='ivar'>@auth</span>
@@ -3268,12 +3588,12 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-289
-290
-291</pre>
+331
+332
+333</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 289</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 331</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_short_codes'>short_codes</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_short_codes'>short_codes</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
@@ -3356,12 +3676,12 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-274
-275
-276</pre>
+316
+317
+318</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 274</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 316</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_signing_keys'>signing_keys</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_signing_keys'>signing_keys</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
@@ -3408,15 +3728,56 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-280
-281
-282</pre>
+322
+323
+324</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 280</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 322</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_sip'>sip</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_sip'>sip</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sync-instance_method">
+  
+    #<strong>sync</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the Sync Twilio Domain</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+175
+176
+177</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 175</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sync'>sync</span>
+  <span class='ivar'>@sync</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Sync.html" title="Twilio::REST::Sync (class)">Sync</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Sync.html#initialize-instance_method" title="Twilio::REST::Sync#initialize (method)">new</a></span></span> <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3449,12 +3810,12 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-121
-122
-123</pre>
+145
+146
+147</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 121</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 145</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_taskrouter'>taskrouter</span>
   <span class='ivar'>@taskrouter</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Taskrouter.html" title="Twilio::REST::Taskrouter (class)">Taskrouter</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Taskrouter.html#initialize-instance_method" title="Twilio::REST::Taskrouter#initialize (method)">new</a></span></span> <span class='kw'>self</span>
@@ -3490,12 +3851,12 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-322
-323
-324</pre>
+364
+365
+366</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 322</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 364</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>#&lt;Twilio::REST::Client </span><span class='embexpr_beg'>#{</span><span class='ivar'>@account_sid</span><span class='embexpr_end'>}</span><span class='tstring_content'>&gt;</span><span class='tstring_end'>&quot;</span></span>
@@ -3542,12 +3903,12 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-295
-296
-297</pre>
+337
+338
+339</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 295</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 337</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_tokens'>tokens</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_tokens'>tokens</span>
@@ -3630,12 +3991,12 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-304
-305
-306</pre>
+346
+347
+348</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 304</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 346</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_transcriptions'>transcriptions</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_transcriptions'>transcriptions</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
@@ -3671,12 +4032,12 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-127
-128
-129</pre>
+151
+152
+153</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 127</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 151</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_trunking'>trunking</span>
   <span class='ivar'>@trunking</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Trunking.html" title="Twilio::REST::Trunking (class)">Trunking</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Trunking.html#initialize-instance_method" title="Twilio::REST::Trunking#initialize (method)">new</a></span></span> <span class='kw'>self</span>
@@ -3723,12 +4084,12 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-310
-311
-312</pre>
+352
+353
+354</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 310</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 352</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_usage'>usage</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_usage'>usage</span>
@@ -3775,12 +4136,12 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-316
-317
-318</pre>
+358
+359
+360</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 316</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 358</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_validation_requests'>validation_requests</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_api'>api</span><span class='period'>.</span><span class='id identifier rubyid_v2010'>v2010</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_validation_requests'>validation_requests</span>
@@ -3816,15 +4177,56 @@ Authentication information is automatically added if none is provided</p>
       <pre class="lines">
 
 
-133
-134
-135</pre>
+157
+158
+159</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 133</span>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 157</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_video'>video</span>
   <span class='ivar'>@video</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Video.html" title="Twilio::REST::Video (class)">Video</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Video.html#initialize-instance_method" title="Twilio::REST::Video#initialize (method)">new</a></span></span> <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="wireless-instance_method">
+  
+    #<strong>wireless</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the Wireless Twilio Domain</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+169
+170
+171</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/client.rb', line 169</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_wireless'>wireless</span>
+  <span class='ivar'>@wireless</span> <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="Wireless.html" title="Twilio::REST::Wireless (class)">Wireless</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Wireless.html#initialize-instance_method" title="Twilio::REST::Wireless#initialize (method)">new</a></span></span> <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3836,7 +4238,7 @@ Authentication information is automatically added if none is provided</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Jul 13 13:04:59 2017 by
+  Generated on Thu Jul 27 12:41:32 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.4.1).
 </div>
