@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Twilio::REST::Notify::V1::ServiceContext
+  
+    &mdash; Documentation by YARD 0.9.9
+  
+</title>
+
+  <link rel="stylesheet" href="../../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Twilio::REST::Notify::V1::ServiceContext";
+  relpath = '../../../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../../../_index.html">Index (S)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../../Twilio.html" title="Twilio (module)">Twilio</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../../REST.html" title="Twilio::REST (module)">REST</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../Notify.html" title="Twilio::REST::Notify (class)">Notify</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../V1.html" title="Twilio::REST::Notify::V1 (class)">V1</a></span></span>
+     &raquo; 
+    <span class="title">ServiceContext</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: Twilio::REST::Notify::V1::ServiceContext
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="../../InstanceContext.html" title="Twilio::REST::InstanceContext (class)">InstanceContext</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../../InstanceContext.html" title="Twilio::REST::InstanceContext (class)">InstanceContext</a></span></li>
+          
+            <li class="next">Twilio::REST::Notify::V1::ServiceContext</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/twilio-ruby/rest/notify/v1/service.rb<span class="defines">,<br />
+  lib/twilio-ruby/rest/notify/v1/service/user.rb,<br /> lib/twilio-ruby/rest/notify/v1/service/binding.rb,<br /> lib/twilio-ruby/rest/notify/v1/service/segment.rb,<br /> lib/twilio-ruby/rest/notify/v1/service/notification.rb,<br /> lib/twilio-ruby/rest/notify/v1/service/user/user_binding.rb,<br /> lib/twilio-ruby/rest/notify/v1/service/user/segment_memberships.rb</span>
+</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>PLEASE NOTE that this class contains beta products that are subject to
+change. Use them with caution.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="ServiceContext/BindingContext.html" title="Twilio::REST::Notify::V1::ServiceContext::BindingContext (class)">BindingContext</a></span>, <span class='object_link'><a href="ServiceContext/BindingInstance.html" title="Twilio::REST::Notify::V1::ServiceContext::BindingInstance (class)">BindingInstance</a></span>, <span class='object_link'><a href="ServiceContext/BindingList.html" title="Twilio::REST::Notify::V1::ServiceContext::BindingList (class)">BindingList</a></span>, <span class='object_link'><a href="ServiceContext/BindingPage.html" title="Twilio::REST::Notify::V1::ServiceContext::BindingPage (class)">BindingPage</a></span>, <span class='object_link'><a href="ServiceContext/NotificationInstance.html" title="Twilio::REST::Notify::V1::ServiceContext::NotificationInstance (class)">NotificationInstance</a></span>, <span class='object_link'><a href="ServiceContext/NotificationList.html" title="Twilio::REST::Notify::V1::ServiceContext::NotificationList (class)">NotificationList</a></span>, <span class='object_link'><a href="ServiceContext/NotificationPage.html" title="Twilio::REST::Notify::V1::ServiceContext::NotificationPage (class)">NotificationPage</a></span>, <span class='object_link'><a href="ServiceContext/SegmentInstance.html" title="Twilio::REST::Notify::V1::ServiceContext::SegmentInstance (class)">SegmentInstance</a></span>, <span class='object_link'><a href="ServiceContext/SegmentList.html" title="Twilio::REST::Notify::V1::ServiceContext::SegmentList (class)">SegmentList</a></span>, <span class='object_link'><a href="ServiceContext/SegmentPage.html" title="Twilio::REST::Notify::V1::ServiceContext::SegmentPage (class)">SegmentPage</a></span>, <span class='object_link'><a href="ServiceContext/UserContext.html" title="Twilio::REST::Notify::V1::ServiceContext::UserContext (class)">UserContext</a></span>, <span class='object_link'><a href="ServiceContext/UserInstance.html" title="Twilio::REST::Notify::V1::ServiceContext::UserInstance (class)">UserInstance</a></span>, <span class='object_link'><a href="ServiceContext/UserList.html" title="Twilio::REST::Notify::V1::ServiceContext::UserList (class)">UserList</a></span>, <span class='object_link'><a href="ServiceContext/UserPage.html" title="Twilio::REST::Notify::V1::ServiceContext::UserPage (class)">UserPage</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#bindings-instance_method" title="#bindings (instance method)">#<strong>bindings</strong>(sid = :unset)  &#x21d2; BindingList, BindingContext </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the bindings.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete-instance_method" title="#delete (instance method)">#<strong>delete</strong>  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Deletes the ServiceInstance.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fetch-instance_method" title="#fetch (instance method)">#<strong>fetch</strong>  &#x21d2; ServiceInstance </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetch a ServiceInstance.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(version, sid)  &#x21d2; ServiceContext </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Initialize the ServiceContext.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#notifications-instance_method" title="#notifications (instance method)">#<strong>notifications</strong>  &#x21d2; NotificationList, NotificationContext </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the notifications.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#segments-instance_method" title="#segments (instance method)">#<strong>segments</strong>  &#x21d2; SegmentList, SegmentContext </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the segments.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_s-instance_method" title="#to_s (instance method)">#<strong>to_s</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Provide a user friendly representation.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update-instance_method" title="#update (instance method)">#<strong>update</strong>(friendly_name: :unset, apn_credential_sid: :unset, gcm_credential_sid: :unset, messaging_service_sid: :unset, facebook_messenger_page_id: :unset, default_apn_notification_protocol_version: :unset, default_gcm_notification_protocol_version: :unset, fcm_credential_sid: :unset, default_fcm_notification_protocol_version: :unset, log_enabled: :unset, alexa_skill_id: :unset, default_alexa_notification_protocol_version: :unset)  &#x21d2; ServiceInstance </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Update the ServiceInstance.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#users-instance_method" title="#users (instance method)">#<strong>users</strong>(identity = :unset)  &#x21d2; UserList, UserContext </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the users.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(version, sid)  &#x21d2; <tt><span class='object_link'><a href="" title="Twilio::REST::Notify::V1::ServiceContext (class)">ServiceContext</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Initialize the ServiceContext</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>version</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../../Version.html" title="Twilio::REST::Version (class)">Version</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Version that contains the resource</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>sid</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The sid</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/notify/v1/service.rb', line 218</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='comma'>,</span> <span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='rparen'>)</span>
+
+  <span class='comment'># Path Solution
+</span>  <span class='ivar'>@solution</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+      <span class='label'>sid:</span> <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+  <span class='rbrace'>}</span>
+  <span class='ivar'>@uri</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/Services/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='comment'># Dependents
+</span>  <span class='ivar'>@bindings</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@notifications</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@users</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@segments</span> <span class='op'>=</span> <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="bindings-instance_method">
+  
+    #<strong>bindings</strong>(sid = :unset)  &#x21d2; <tt><span class='object_link'><a href="ServiceContext/BindingList.html" title="Twilio::REST::Notify::V1::ServiceContext::BindingList (class)">BindingList</a></span></tt>, <tt><span class='object_link'><a href="ServiceContext/BindingContext.html" title="Twilio::REST::Notify::V1::ServiceContext::BindingContext (class)">BindingContext</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the bindings</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ServiceContext/BindingList.html" title="Twilio::REST::Notify::V1::ServiceContext::BindingList (class)">BindingList</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ServiceContext/BindingContext.html" title="Twilio::REST::Notify::V1::ServiceContext::BindingContext (class)">BindingContext</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if sid was passed.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/notify/v1/service.rb', line 312</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_bindings'>bindings</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sid cannot be nil</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'><span class='object_link'><a href="ServiceContext/BindingContext.html" title="Twilio::REST::Notify::V1::ServiceContext::BindingContext (class)">BindingContext</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="ServiceContext/BindingContext.html#initialize-instance_method" title="Twilio::REST::Notify::V1::ServiceContext::BindingContext#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>unless</span> <span class='ivar'>@bindings</span>
+    <span class='ivar'>@bindings</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="ServiceContext/BindingList.html" title="Twilio::REST::Notify::V1::ServiceContext::BindingList (class)">BindingList</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="ServiceContext/BindingList.html#initialize-instance_method" title="Twilio::REST::Notify::V1::ServiceContext::BindingList#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>service_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@bindings</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete-instance_method">
+  
+    #<strong>delete</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Deletes the ServiceInstance</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>true if delete succeeds, true otherwise</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+237
+238
+239</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/notify/v1/service.rb', line 237</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete'>delete</span>
+  <span class='ivar'>@version</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>delete</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@uri</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="fetch-instance_method">
+  
+    #<strong>fetch</strong>  &#x21d2; <tt><span class='object_link'><a href="ServiceInstance.html" title="Twilio::REST::Notify::V1::ServiceInstance (class)">ServiceInstance</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetch a ServiceInstance</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ServiceInstance.html" title="Twilio::REST::Notify::V1::ServiceInstance (class)">ServiceInstance</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Fetched ServiceInstance</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/notify/v1/service.rb', line 244</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_fetch'>fetch</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../../Twilio.html" title="Twilio (module)">Twilio</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../../Values.html" title="Twilio::Values (class)">Values</a></span></span><span class='period'>.</span><span class='id identifier rubyid_of'><span class='object_link'><a href="../../../Values.html#of-class_method" title="Twilio::Values.of (method)">of</a></span></span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='ivar'>@version</span><span class='period'>.</span><span class='id identifier rubyid_fetch'>fetch</span><span class='lparen'>(</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>GET</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+      <span class='ivar'>@uri</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+
+  <span class='const'><span class='object_link'><a href="ServiceInstance.html" title="Twilio::REST::Notify::V1::ServiceInstance (class)">ServiceInstance</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="ServiceInstance.html#initialize-instance_method" title="Twilio::REST::Notify::V1::ServiceInstance#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+      <span class='ivar'>@version</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_payload'>payload</span><span class='comma'>,</span>
+      <span class='label'>sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="notifications-instance_method">
+  
+    #<strong>notifications</strong>  &#x21d2; <tt><span class='object_link'><a href="ServiceContext/NotificationList.html" title="Twilio::REST::Notify::V1::ServiceContext::NotificationList (class)">NotificationList</a></span></tt>, <tt>NotificationContext</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the notifications</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ServiceContext/NotificationList.html" title="Twilio::REST::Notify::V1::ServiceContext::NotificationList (class)">NotificationList</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NotificationContext</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/notify/v1/service.rb', line 337</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_notifications'>notifications</span>
+  <span class='kw'>unless</span> <span class='ivar'>@notifications</span>
+    <span class='ivar'>@notifications</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="ServiceContext/NotificationList.html" title="Twilio::REST::Notify::V1::ServiceContext::NotificationList (class)">NotificationList</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="ServiceContext/NotificationList.html#initialize-instance_method" title="Twilio::REST::Notify::V1::ServiceContext::NotificationList#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>service_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@notifications</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="segments-instance_method">
+  
+    #<strong>segments</strong>  &#x21d2; <tt><span class='object_link'><a href="ServiceContext/SegmentList.html" title="Twilio::REST::Notify::V1::ServiceContext::SegmentList (class)">SegmentList</a></span></tt>, <tt>SegmentContext</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the segments</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ServiceContext/SegmentList.html" title="Twilio::REST::Notify::V1::ServiceContext::SegmentList (class)">SegmentList</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>SegmentContext</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/notify/v1/service.rb', line 377</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_segments'>segments</span>
+  <span class='kw'>unless</span> <span class='ivar'>@segments</span>
+    <span class='ivar'>@segments</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="ServiceContext/SegmentList.html" title="Twilio::REST::Notify::V1::ServiceContext::SegmentList (class)">SegmentList</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="ServiceContext/SegmentList.html#initialize-instance_method" title="Twilio::REST::Notify::V1::ServiceContext::SegmentList#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>service_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@segments</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_s-instance_method">
+  
+    #<strong>to_s</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Provide a user friendly representation</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+390
+391
+392
+393</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/notify/v1/service.rb', line 390</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='id identifier rubyid_context'>context</span> <span class='op'>=</span> <span class='ivar'>@solution</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_v'>v</span><span class='op'>|</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_k'>k</span><span class='embexpr_end'>}</span><span class='tstring_content'>: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_v'>v</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>,</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>#&lt;Twilio.Notify.V1.ServiceContext </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_context'>context</span><span class='embexpr_end'>}</span><span class='tstring_content'>&gt;</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update-instance_method">
+  
+    #<strong>update</strong>(friendly_name: :unset, apn_credential_sid: :unset, gcm_credential_sid: :unset, messaging_service_sid: :unset, facebook_messenger_page_id: :unset, default_apn_notification_protocol_version: :unset, default_gcm_notification_protocol_version: :unset, fcm_credential_sid: :unset, default_fcm_notification_protocol_version: :unset, log_enabled: :unset, alexa_skill_id: :unset, default_alexa_notification_protocol_version: :unset)  &#x21d2; <tt><span class='object_link'><a href="ServiceInstance.html" title="Twilio::REST::Notify::V1::ServiceInstance (class)">ServiceInstance</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Update the ServiceInstance</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>friendly_name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The friendly_name</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>apn_credential_sid</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The apn_credential_sid</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>gcm_credential_sid</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The gcm_credential_sid</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>messaging_service_sid</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The messaging_service_sid</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>facebook_messenger_page_id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The facebook_messenger_page_id</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>default_apn_notification_protocol_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The default_apn_notification_protocol_version</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>default_gcm_notification_protocol_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The default_gcm_notification_protocol_version</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>fcm_credential_sid</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The fcm_credential_sid</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>default_fcm_notification_protocol_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The default_fcm_notification_protocol_version</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>log_enabled</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The log_enabled</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>alexa_skill_id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The alexa_skill_id</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>default_alexa_notification_protocol_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The default_alexa_notification_protocol_version</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ServiceInstance.html" title="Twilio::REST::Notify::V1::ServiceInstance (class)">ServiceInstance</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Updated ServiceInstance</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/notify/v1/service.rb', line 279</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='label'>friendly_name:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>apn_credential_sid:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>gcm_credential_sid:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>messaging_service_sid:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>facebook_messenger_page_id:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>default_apn_notification_protocol_version:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>default_gcm_notification_protocol_version:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>fcm_credential_sid:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>default_fcm_notification_protocol_version:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>log_enabled:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>alexa_skill_id:</span> <span class='symbol'>:unset</span><span class='comma'>,</span> <span class='label'>default_alexa_notification_protocol_version:</span> <span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../../Twilio.html" title="Twilio (module)">Twilio</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../../Values.html" title="Twilio::Values (class)">Values</a></span></span><span class='period'>.</span><span class='id identifier rubyid_of'><span class='object_link'><a href="../../../Values.html#of-class_method" title="Twilio::Values.of (method)">of</a></span></span><span class='lparen'>(</span><span class='lbrace'>{</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>FriendlyName</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_friendly_name'>friendly_name</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ApnCredentialSid</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_apn_credential_sid'>apn_credential_sid</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>GcmCredentialSid</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_gcm_credential_sid'>gcm_credential_sid</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>MessagingServiceSid</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_messaging_service_sid'>messaging_service_sid</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>FacebookMessengerPageId</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_facebook_messenger_page_id'>facebook_messenger_page_id</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>DefaultApnNotificationProtocolVersion</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_default_apn_notification_protocol_version'>default_apn_notification_protocol_version</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>DefaultGcmNotificationProtocolVersion</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_default_gcm_notification_protocol_version'>default_gcm_notification_protocol_version</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>FcmCredentialSid</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_fcm_credential_sid'>fcm_credential_sid</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>DefaultFcmNotificationProtocolVersion</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_default_fcm_notification_protocol_version'>default_fcm_notification_protocol_version</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>LogEnabled</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_log_enabled'>log_enabled</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>AlexaSkillId</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_alexa_skill_id'>alexa_skill_id</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>DefaultAlexaNotificationProtocolVersion</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_default_alexa_notification_protocol_version'>default_alexa_notification_protocol_version</span><span class='comma'>,</span>
+  <span class='rbrace'>}</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='ivar'>@version</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>POST</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+      <span class='ivar'>@uri</span><span class='comma'>,</span>
+      <span class='label'>data:</span> <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+
+  <span class='const'><span class='object_link'><a href="ServiceInstance.html" title="Twilio::REST::Notify::V1::ServiceInstance (class)">ServiceInstance</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="ServiceInstance.html#initialize-instance_method" title="Twilio::REST::Notify::V1::ServiceInstance#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+      <span class='ivar'>@version</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_payload'>payload</span><span class='comma'>,</span>
+      <span class='label'>sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="users-instance_method">
+  
+    #<strong>users</strong>(identity = :unset)  &#x21d2; <tt><span class='object_link'><a href="ServiceContext/UserList.html" title="Twilio::REST::Notify::V1::ServiceContext::UserList (class)">UserList</a></span></tt>, <tt><span class='object_link'><a href="ServiceContext/UserContext.html" title="Twilio::REST::Notify::V1::ServiceContext::UserContext (class)">UserContext</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the users</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ServiceContext/UserList.html" title="Twilio::REST::Notify::V1::ServiceContext::UserList (class)">UserList</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ServiceContext/UserContext.html" title="Twilio::REST::Notify::V1::ServiceContext::UserContext (class)">UserContext</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if identity was passed.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/notify/v1/service.rb', line 352</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_users'>users</span><span class='lparen'>(</span><span class='id identifier rubyid_identity'>identity</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>identity cannot be nil</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_identity'>identity</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_identity'>identity</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'><span class='object_link'><a href="ServiceContext/UserContext.html" title="Twilio::REST::Notify::V1::ServiceContext::UserContext (class)">UserContext</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="ServiceContext/UserContext.html#initialize-instance_method" title="Twilio::REST::Notify::V1::ServiceContext::UserContext#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_identity'>identity</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>unless</span> <span class='ivar'>@users</span>
+    <span class='ivar'>@users</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="ServiceContext/UserList.html" title="Twilio::REST::Notify::V1::ServiceContext::UserList (class)">UserList</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="ServiceContext/UserList.html#initialize-instance_method" title="Twilio::REST::Notify::V1::ServiceContext::UserList#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>service_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@users</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Aug 18 11:52:13 2017 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.9 (ruby-2.4.1).
+</div>
+
+    </div>
+  </body>
+</html>
