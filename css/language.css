@@ -10,13 +10,15 @@ body {
 }
 
 .versions li {
-    font-size: 0.75em;
+    padding-bottom: 5px;
 }
 
 .versions a {
     text-decoration: none;
     color: black;
     border-bottom: 1px solid #f12e45;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .versions a:hover {
