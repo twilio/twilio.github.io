@@ -13,6 +13,16 @@ body {
     font-size: 0.75em;
 }
 
+.versions a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #f12e45;
+}
+
+.versions a:hover {
+    color: #f12e45;
+}
+
 .header {
     background-color: #0D112B;
     height: 54px;
