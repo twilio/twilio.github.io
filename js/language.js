@@ -6,6 +6,7 @@ function loadReadme() {
   }).done(function(data) {
     var converter = new showdown.Converter();
     converter.setFlavor('github');
+    converter.setOption('simpleLineBreaks', false);
     $('.readme')[0].innerHTML = converter.makeHtml(data);
   })
 }
