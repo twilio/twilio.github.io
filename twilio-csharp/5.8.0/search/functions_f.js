@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['queue',['Queue',['../class_twilio_1_1_twi_m_l_1_1_voice_1_1_dial.html#a440afda8dc53afeb3de8a8b545911c05',1,'Twilio.TwiML.Voice.Dial.Queue(Queue queue)'],['../class_twilio_1_1_twi_m_l_1_1_voice_1_1_dial.html#a8334e538835c14fab83ab7165c0db210',1,'Twilio.TwiML.Voice.Dial.Queue(string name=null, Uri url=null, Twilio.Http.HttpMethod method=null, string reservationSid=null, string postWorkActivitySid=null)'],['../class_twilio_1_1_twi_m_l_1_1_voice_1_1_queue.html#abfd164a10fa5d35839b5f93735cc0441',1,'Twilio.TwiML.Voice.Queue.Queue()'],['../class_twilio_1_1_twi_m_l_1_1_voice_response.html#adc7fb6edc1b857d70685b589bbd9b56f',1,'Twilio.TwiML.VoiceResponse.Queue(Queue queue)'],['../class_twilio_1_1_twi_m_l_1_1_voice_response.html#a664b97d66b971ff44d6355b0fa585b91',1,'Twilio.TwiML.VoiceResponse.Queue(string name=null, Uri url=null, Twilio.Http.HttpMethod method=null, string reservationSid=null, string postWorkActivitySid=null)']]]
-];

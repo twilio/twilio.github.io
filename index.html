@@ -8,6 +8,7 @@
     <style>
       body {
         color: white;
+        background-color: #0d1029;
         font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue","Helvetica","Arial",sans-serif;
       }
 
@@ -18,7 +19,21 @@
         text-align: center;
       }
 
+      li:hover {
+        background-color: rgba(255,255,255,0.2);
+
+        transition: background-color 0.7s;
+        -webkit-transition: background-color 0.7s;
+        -moz-transition: background-color 0.7s;
+        -o-transition: background-color 0.7s;
+      }
+
       li {
+        transition: background-color 0.7s;
+        -webkit-transition: background-color 0.7s;
+        -moz-transition: background-color 0.7s;
+        -o-transition: background-color 0.7s;
+
         cursor: pointer;
         margin: 10px;
         line-height: 40px;
@@ -62,6 +77,8 @@
         left: 0;
         overflow: hidden;
         z-index: -100;
+        max-width: 1920px;
+        margin: 0 auto;
       }
 
       .background-video {
@@ -87,49 +104,49 @@
     </div>
 
     <div class="header">
-      <img src="img/logo.svg" />
+      <a href="https://www.twilio.com"><img src="img/logo.svg" /></a>
       <h1>Helper Libraries</h1>
     </div>
 
     <ul>
 
       <li>
-        <a href="twilio-php/index.html">
+        <a href="https://www.twilio.com/docs/libraries/reference/twilio-php/index.html">
           <img class="language-icon" src="img/languages/php.svg" />
           <span>PHP</span>
         </a>
       </li>
 
       <li>
-        <a href="twilio-node/index.html">
+        <a href="https://www.twilio.com/docs/libraries/reference/twilio-node/index.html">
           <img class="language-icon" src="img/languages/node.svg" />
           <span>Node</span>
         </a>
       </li>
 
       <li>
-        <a href="twilio-csharp/index.html">
+        <a href="https://www.twilio.com/docs/libraries/reference/twilio-csharp/index.html">
           <img class="language-icon" src="img/languages/csharp.svg" />
           <span>C# / .NET</span>
         </a>
       </li>
 
       <li>
-        <a href="twilio-java/index.html">
+        <a href="https://www.twilio.com/docs/libraries/reference/twilio-java/index.html">
           <img class="language-icon" src="img/languages/java.svg" />
           <span>Java</span>
         </a>
       </li>
 
       <li>
-        <a href="twilio-python/index.html">
+        <a href="https://www.twilio.com/docs/libraries/reference/twilio-python/index.html">
           <img class="language-icon" src="img/languages/python.svg" />
           <span>Python</span>
         </a>
       </li>
 
       <li>
-        <a href="twilio-ruby/index.html">
+        <a href="https://www.twilio.com/docs/libraries/reference/twilio-ruby/index.html">
           <img class="language-icon" src="img/languages/ruby.svg" />
           <span>Ruby</span>
         </a>
