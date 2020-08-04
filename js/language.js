@@ -1,6 +1,6 @@
 function loadReadme() {
     var language = $('.readme').data('language');
-    var branch = 'master';
+    var branch = 'HEAD';
 
     var readmeUrl = 'https://raw.githubusercontent.com/twilio/twilio-' + language + '/' + branch + '/README.md';
     var basePath = 'https://github.com/twilio/twilio-' + language + '/blob/' + branch + '/';
